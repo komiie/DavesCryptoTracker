@@ -1,4 +1,6 @@
 body {
+    /* height: 1000px;
+    width: 1000px; */
 display: flex;
 align-items: center;
 justify-content: center;
@@ -7,8 +9,22 @@ background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
 
 }
 
+#navbar{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
 #headerpic{
     display: flex;
     height: 80px;
     width: 1000px;
+    margin-bottom: 800px;
+}
+
+#inputfield{
+    display: flex;
+    align-content:top;
+    width: 80px;
+    height: 80px;
 }
