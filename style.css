@@ -3,6 +3,12 @@ display: flex;
 align-items: center;
 justify-content: center;
 background: rgb(58,156,27);
-background: linear-gradient(144deg, rgba(58,156,27,1) 0%, rgba(17,95,255,1) 60%);
+background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
 
+}
+
+#headerpic{
+    display: flex;
+    height: 80px;
+    width: 1000px;
 }
