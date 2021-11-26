@@ -2,5 +2,7 @@ body {
 display: flex;
 align-items: center;
 justify-content: center;
-background-color: rgb(75, 164, 75);
+background: rgb(58,156,27);
+background: linear-gradient(144deg, rgba(58,156,27,1) 0%, rgba(17,95,255,1) 60%);
+
 }
