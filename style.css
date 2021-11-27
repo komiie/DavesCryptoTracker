@@ -1,12 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     /* height: 1000px;
     width: 1000px; - ta bort flex från bodyn bara?  */
-display: flex;
-align-items: center;
-justify-content: center;
 background: rgb(58,156,27);
 background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
+}
 
+#submitbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 150px;
+    height: 60px;
+    width: 200px;
+    border-radius: 25px;  
+    background: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%);
 }
 
 #navbar{
@@ -14,6 +27,7 @@ background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
     justify-content: center;
     margin: 0 auto;
 }
+
 
 #headerpic{
     display: flex;
