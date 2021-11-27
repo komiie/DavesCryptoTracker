@@ -20,6 +20,8 @@ background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
     width: 200px;
     border-radius: 25px;  
     background: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%);
+    cursor:pointer;
+    /* don't forget att lägga till ljudeffekt?! */
 }
 
 #navbar{
