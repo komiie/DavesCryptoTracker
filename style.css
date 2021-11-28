@@ -1,6 +1,7 @@
 body {
-    /* height: 1000px;
-    width: 1000px; - ta bort flex från bodyn bara?  */
+    /* få till resten i center/mitten   */
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
 background: rgb(58,156,27);
