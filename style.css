@@ -27,7 +27,7 @@ background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
 #navbar{
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 
@@ -36,11 +36,23 @@ background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
     height: 80px;
     width: 1000px;
     margin-bottom: 800px;
+    margin-left: 200px;
 }
 
-#inputfield{
+/*Fixa table position */
+.crypto-table {
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* margin: 0 auto; */
+    margin-top: 250px;
+    
+   
+}
+
+/* #inputfield{
     display: flex;
     align-content:top;
     width: 80px;
     height: 80px;
-}
+} */
