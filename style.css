@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
     /* height: 1000px;
     width: 1000px; - ta bort flex från bodyn bara?  */
@@ -36,7 +31,7 @@ background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
     height: 80px;
     width: 1000px;
     margin-bottom: 800px;
-    margin-left: 200px;
+    margin-left: 500px;
 }
 
 /*Fixa table position */
@@ -50,9 +45,9 @@ background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
    
 }
 
-/* #inputfield{
-    display: flex;
-    align-content:top;
-    width: 80px;
-    height: 80px;
-} */
+/* ska komma in efter datatablen */
+#cryptoform {
+margin-top: auto;
+
+
+}
