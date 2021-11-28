@@ -1,6 +1,8 @@
 body {
     /* height: 1000px;
     width: 1000px; - ta bort flex från bodyn bara?  */
+    height: 100%;
+    width: 100%;
 background: rgb(58,156,27);
 background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
 }
@@ -30,6 +32,7 @@ background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
     display: flex;
     height: 80px;
     width: 1000px;
+    margin-top: 30px;
     margin-bottom: 800px;
     margin-left: 500px;
 }
@@ -37,10 +40,11 @@ background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
 /*Fixa table position */
 .crypto-table {
     color: white;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     /* margin: 0 auto; */
     margin-top: 250px;
+    padding: 10px;
     
    
 }
