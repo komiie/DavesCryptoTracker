@@ -10,9 +10,7 @@
 
 //Coingecko seems to work eller? JSON format
 //add these: symbol, name, image, current price, market cap, total_supply, 
-// https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=200&page=1&sparkline=false
-
-
+// https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=false
 
 // static eller inte...
 // return <table> 
@@ -28,3 +26,8 @@
 //             </tr> 
 //         </table>
 
+fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=false").then(function(response){
+    return response.json()
+    }).then(function(data) {
+        console.log(data)        
+    })
