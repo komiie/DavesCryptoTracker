@@ -19,18 +19,29 @@
 //                 <td>{data.name}</td>
 //                 <td>"$"+{data.market_cap}</td>
 //                 <td>{data.current_price}</td>
-//                 <td>"$"+{data.ath}</td>
-//                 <td>{data.total_supply}</td>
+//     
 //             </tr> 
 //         </table>
 
 //fetch listan för select: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false
 
 let apiLink = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=15&page=1&sparkline=false"
+let submitBTN = document.getElementById('submitbutton');
 
 async function loadAPI() { 
 const response = await fetch(apiLink)
 const data =  await response.json()
-        console.log(data)        
+        // console.log(data)        
     }
+
+    //testa lägg in i funktionen i funktionen
 loadAPI()
+dropdownList()
+
+function dropdownList() {
+const select = document.getElementById('cryptodropdown');
+const cryptonames = dropdownList.map() {
+
+}
+
+}
