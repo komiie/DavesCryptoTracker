@@ -22,6 +22,9 @@ background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
     cursor:pointer;
     /* don't forget att lägga till ljudeffekt?! */
 }
+/* .coin-marquee-container__inner {
+    max-width 200px; */
+}
 
 #navbar{
     display: flex;
