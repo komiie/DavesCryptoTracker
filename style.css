@@ -1,20 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    /* få till resten i center/mitten   */
     display: flex;
-    flex-direction: column;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    justify-content: center;
+
 background: rgb(58,156,27);
 background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
+
+}
+.container {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin:auto;
+  
+    
+}
+#coinmarketcap-widget-marquee {
+    width: 1000px;
+}
+
+#widget {
+    width: 100%;
 }
 
 #submitbutton {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    margin-top: 150px;
+    align-self: center;
+
+  
+    margin: 20px auto;
+
     height: 60px;
     width: 200px;
     border-radius: 25px;  
@@ -28,18 +50,19 @@ background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
 
 #navbar{
     display: flex;
-    justify-content: center;
-    /* margin: 0 auto; */
+    margin-top: 10px;
+   align-items: center;
+   margin: auto;
+   
 }
 
 
 #headerpic{
-    display: flex;
-    height: 80px;
-    width: 1000px;
-    margin-top: 30px;
-    margin-bottom: 800px;
-    margin-left: 500px;
+    width: 100%;
+    margin-top: 20px;
+    align-self: center;
+    display: block;
+
 }
 
 /*Fixa table position */
@@ -48,7 +71,6 @@ background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 250px;
     padding: 10px;
     
    

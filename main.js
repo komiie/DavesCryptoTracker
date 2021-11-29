@@ -11,7 +11,7 @@
 // https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=false
 
 // static eller inte...
-// return <table> 
+// return <table> innerHTML =  onclick = loop `
 
 //             <tr> 
 //                 <td>{data.market_cap_rank}</td>
@@ -21,7 +21,7 @@
 //                 <td>{data.current_price}</td>
 //     
 //             </tr> 
-//         </table>
+//         </table>`
 
 //fetch listan för select: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false
 
@@ -31,18 +31,27 @@ let cryptodropdown = document.getElementById('cryptodropdown');
 
 async function loadAPI() { 
 const response = await fetch(apiLink)
-const data =  await response.json()
-        // console.log(data)        
+const getData =  await response.json()
+    dropdownList(getData);        
     }
+    //fetcha datan från JSON
 
-    //testa lägg in i funktionen i funktionen
+
+
+async function dropdownList(getData) {
+const select = document.getElementById('cryptodropdown');
+const cryptoNames = getData.map(data  => {
+const option = document.createElement('option');
+option.text = data.name;
+
+return option;
+})
+cryptoNames.forEach(cryptoName => {
+select.appendChild(cryptoName);
+})
+}
+
+//funktion-lista ordning
 loadAPI()
 dropdownList()
 
-function dropdownList() {
-const select = document.getElementById('cryptodropdown');
-const cryptonames = dropdownList.map() {
-
-}
-
-}
