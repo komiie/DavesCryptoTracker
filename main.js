@@ -25,19 +25,23 @@
 
 //fetch listan för select: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false
 
-let apiLink = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=15&page=1&sparkline=false"
+let apiLink = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=17&page=1&sparkline=false"
 let submitBTN = document.getElementById('submitbutton');
 let cryptodropdown = document.getElementById('cryptodropdown');
+let cryptotable = document.querySelector('.cryptotable');
+let sendBTN = document.getElementById('sendBTN');
 
+ //Anrop function, fetcha datan från JSON
 async function loadAPI() { 
-const response = await fetch(apiLink)
+const response = await fetch(apiLink) //använde objektet ist för en hel URLstring
 const getData =  await response.json()
     dropdownList(getData);        
     }
-    //fetcha datan från JSON
+   
 
 
 
+    //dropdown-list items generator function
 async function dropdownList(getData) {
 const select = document.getElementById('cryptodropdown');
 const cryptoNames = getData.map(data  => {
@@ -51,6 +55,7 @@ select.appendChild(cryptoName);
 })
 }
 
+let sendBTN
 //funktion-lista ordning
 loadAPI()
 dropdownList()
