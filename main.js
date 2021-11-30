@@ -19,22 +19,21 @@ let sendBTN = document.getElementById('sendBTN');
 
  //1. Anrop function, fetcha datan från JSON
 async function loadAPI() { 
-const response = await fetch(apiLink) //använde objektet ist för en hel URLstring
-const getData =  await response.json()
+const response = await fetch(apiLink)       //använde objektet ist för en hel URLstring
+const getData =  await response.json()      //döper till getData
     dropdownList(getData);        
     }
    
 //2. Table function generator
-cryptotable.innerHTML = 
+
 
 
 //3. Dropdown-list items generator function
-async function dropdownList(getData) {
-const select = document.getElementById('cryptodropdown');
-const cryptoNames = getData.map(data  => {
-const option = document.createElement('option');
-option.text = data.name;
-
+async function dropdownList(getData) {                          //infon kallas getData
+const select = document.getElementById('cryptodropdown');   //hämta listan/select
+const cryptoNames = getData.map(data  => {              //kör map-funktion, data heter datan från API
+const option = document.createElement('option');        //gör option
+option.text = data.name;                                //lägger in värdet från datan, väljer name, attachar till varje option
 return option;
 })
 cryptoNames.forEach(cryptoName => {
