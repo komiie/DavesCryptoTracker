@@ -15,24 +15,28 @@
         <div id="navbar">
           
             <img src="Headerpic.png" id="headerpic" alt="cryptotracker-pic" srcset="" />
-            <input type="submit" id="submitbutton" value="Show me the money">
+            <input type="submit" id="submitbutton" value="Show me the best crypto project">
             
-            <table class="crypto-table"> <tr> 
-              <th id="rank">Rank</th>
-              <th id="logo">Logo</th>
+            <!-- <table class="crypto-table"> <tr> 
+              <th id="rank">Rank</th> 
+              <th id="symbol">Logo</th>
               <th id="name">Name</th>
               <th id="marketcap">Market Cap</th>
               <th id="price">Current price</th>
           </tr>
-         </table>
+         </table> -->
 
          <form id="cryptoform">
-          <h1>Want free coins?! Register here!</h1>
-          <h3>DISCLAIMER: Not scam free though.</h3>
-          <div class="cryptotable">
+          
+          <div class="cryptotable" id="cryptotable" style="display:none;">
+           <table >
+             
+           </table> 
 
           </div>
               <div >
+                <h1>Want free coins?! Register here!</h1>
+          <h3>DISCLAIMER: Not scam free though.</h3>
                   <action action="" method="POST">
               <!-- om du har Label - kan du köra id och isf kan man klicka/markera på labeln typ Namn och så markeras 
               value=för att man ska skicka samma info till DBen-->
@@ -46,12 +50,19 @@
                       
               </div >
                       <br>
-                      <label for="crypto">Choose your coin:</label>
+                      <label for="crypto">Choose your coin by Rank:</label>
                       <select name="crypto" id="cryptodropdown">
                       <option value="checked">Let's get rich bro, chose your coin!</option>
                       </select>
               
                       <br>
+                      <!-- <br>
+                      <label for="crypto">Choose your second coin by Market Cap:</label>
+                      <select name="crypto" id="cryptodropdown2">
+                      <option value="checked">Let's get rich bro, chose your second coin!</option>
+                      </select>
+              
+                      <br> -->
               <label for="comment"><br>Motivation letter</label><br>
               <textarea name="comment" id="comment" cols="40" rows="10" placeholder="Tell us why we should pick as for the winner">
           </textarea>
