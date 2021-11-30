@@ -38,10 +38,10 @@ const getData =  await response.json()
     dropdownList(getData);        
     }
    
+//2. Table function generator
 
 
-
-//2. Dropdown-list items generator function
+//3. Dropdown-list items generator function
 async function dropdownList(getData) {
 const select = document.getElementById('cryptodropdown');
 const cryptoNames = getData.map(data  => {
@@ -60,7 +60,8 @@ alert("Uh-oh, you just transfered all of your coins to us! Sorry mate, but I rea
 
 })
 
-//3. Funktion-lista ordning
+//4. Funktion-lista ordning
 loadAPI()
+
 dropdownList()
 
