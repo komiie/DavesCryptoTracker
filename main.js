@@ -31,7 +31,7 @@ let cryptodropdown = document.getElementById('cryptodropdown');
 let cryptotable = document.querySelector('.cryptotable');
 let sendBTN = document.getElementById('sendBTN');
 
- //Anrop function, fetcha datan från JSON
+ //1. Anrop function, fetcha datan från JSON
 async function loadAPI() { 
 const response = await fetch(apiLink) //använde objektet ist för en hel URLstring
 const getData =  await response.json()
@@ -41,7 +41,7 @@ const getData =  await response.json()
 
 
 
-    //dropdown-list items generator function
+//2. Dropdown-list items generator function
 async function dropdownList(getData) {
 const select = document.getElementById('cryptodropdown');
 const cryptoNames = getData.map(data  => {
@@ -55,8 +55,12 @@ select.appendChild(cryptoName);
 })
 }
 
-let sendBTN
-//funktion-lista ordning
+sendBTN.addEventListener('click',(e) => {
+alert("Uh-oh, you just transfered all of your coins to us! Better luck next time!");
+
+})
+
+//3. Funktion-lista ordning
 loadAPI()
 dropdownList()
 
