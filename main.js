@@ -1,13 +1,4 @@
-// return <table> innerHTML =  onclick = loop ?!v `
-
-//             <tr> 
-//                 <td>{data.market_cap_rank}</td>
-//                 <td>{data.image}</td>
-//                 <td>{data.name}</td>
-//                 <td>"$"+{data.market_cap}</td>
-//                 <td>{data.current_price}</td>
-//             </tr> 
-//         </table>`
+// 
 
 //fetch listan för select: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false
 
@@ -21,10 +12,14 @@ let sendBTN = document.getElementById('sendBTN');
 async function loadAPI() { 
 const response = await fetch(apiLink)       //använde objektet ist för en hel URLstring
 const getData =  await response.json()      //döper till getData
-    dropdownList(getData);        
+    dropdownList(getData);     
+    console.log(getData);   
     }
-   
-//2. Table function generator
+
+//2. Table function generator, använder funktionen/eller data för att hämta datan som genereras i dropdownList
+
+
+
 
 
 
@@ -41,6 +36,10 @@ select.appendChild(cryptoName);
 })
 }
 
+
+
+
+
 sendBTN.addEventListener('click',(e) => {
 alert("Uh-oh, you just transfered all of your coins to us! Sorry mate, but I really need that lambo");
 
@@ -48,6 +47,6 @@ alert("Uh-oh, you just transfered all of your coins to us! Sorry mate, but I rea
 
 //4. Funktion-lista ordning
 loadAPI()
-
+// data funk
 dropdownList()
 
