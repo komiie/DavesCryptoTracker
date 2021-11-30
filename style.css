@@ -10,7 +10,7 @@ body {
     justify-content: center;
 
 background: rgb(58,156,27);
-background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
+background: linear-gradient(100deg, rgb(242, 179, 252) 0%, rgb(135, 199, 255) 60%);
 
 }
 .container {
@@ -82,5 +82,5 @@ background: linear-gradient(144deg, rgb(83, 0, 96) 0%, rgb(0, 29, 87) 60%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: rgb(225, 255, 0);
+    color: rgb(124, 0, 114);
 }
