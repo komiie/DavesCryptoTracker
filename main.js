@@ -56,7 +56,7 @@ select.appendChild(cryptoName);
 }
 
 sendBTN.addEventListener('click',(e) => {
-alert("Uh-oh, you just transfered all of your coins to us! Better luck next time!");
+alert("Uh-oh, you just transfered all of your coins to us! Sorry mate, but I really need that lambo");
 
 })
 
